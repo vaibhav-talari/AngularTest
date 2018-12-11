@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div class="container text-center">
+    <app-body></app-body>
+    <table class="table table-hover">
+        <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">Project Titles</th>
+            <th scope="col">Description</th>
+            <th scope="col">Industrial Use</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let state1 of projectdata">
+            <td> {{state1.clm1}}</td>
+            <td>{{state1.clm2}}</td>
+            <td>{{state1.clm3}}</td>
+            <td> {{state1.clm4}}</td>
+            <td>
+                <button style="float: right;" class="rem2">X</button>
+            </td>
+    </table>
+
+</div>
+
+<app-footer></app-footer>
